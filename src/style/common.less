@@ -1,0 +1,46 @@
+html, body {
+    height: 100%;
+}
+#root {
+    height: 100%;
+}
+.App {
+    height: 100%;
+}
+.wrapper {
+    height: 100%;
+    .nav-left {
+        background-color: #001529;
+        height: 100%;
+    }
+    .main {
+        background: #f0f2f5;
+        height: calc(100vh);
+        overflow: auto;
+        .content-wrapper {
+            position: relative;
+            padding: 25px;
+            .container {
+                width: 100%;
+            }
+            .content {
+                margin: 25px 0;
+                background: #fff;
+                padding: 20px 15px;
+            }
+        } 
+    }
+}
+#loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    font-size: 20px;
+}
